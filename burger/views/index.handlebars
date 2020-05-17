@@ -1,30 +1,67 @@
 {{!-- SET UP TEMPLATE SO HANDLEBARS CAN RENDER INTO --}}
 <section class="section">
-    <div class="container">
-        <nav class="level">
-            <div class="level-item">
+    <div class="container hero">
+        <nav class="level hero-head">
+            <div class="level-item has-text-centered">
                     <p class="title is-5">
                         <strong>EAT - DA - BURGER</strong>
                     </p>
                 </div>
-            {{!-- LEFT SIDE --}}
-            {{!-- <div class="level-left">
-                <div class="level-item">
-                    <p class="title is-5">
-                        <strong>EAT - DA - BURGER</strong>
-                    </p>
+        </nav>
+            <div class="level-item hero-body">
+                <div class="">
+                    <figure class="image is-128x128">
+                        <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                    </figure>
                 </div>
-            </div> --}}
-            {{!-- TEXT BOX WITH SUBMIT BUTTON --}}
-            <div class="level-item">
+        
+            </div>
+            <div class="level-item hero-body">
                 <div class="field has-addons">
                     <p class="control">
-                        <input class="input" type="text" placeholder="Name a Burger"
+                        <input class="input" type="text" placeholder="Name a Burger">
+                    </p>
+                    <p class="control">
+                        <button class="button">
+                            SUBMIT
+                        </button>
                     </p>
                 </div>
             </div>
-        </nav>
     </div>
+    
+    <div class="container">
+        {{!-- LEFT SIDE --}}
+        <div class="level-left">
+            <div class="level-item">
+                <p class="title is-5">
+                    <strong>NAME - DAT - BURGER</strong>
+                </p>
+            </div>
+        </div>
+
+        {{!-- RIGHT SIDE --}}
+        <div class="level-right">
+            <div class="level-item">
+                <p class="title is-5">
+                    <strong>DEVOUR - DAT - BURGER</strong>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    {{!-- FOOTER --}}
+    {{!-- <div class="hero-foot">
+    <nav class="tabs">
+      <div class="container">
+        <ul>
+          <li class="is-active"><a>Copyright VS 2020</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div> --}}
+
 </section>
 
 <footer></footer>
