@@ -4,7 +4,7 @@
         <nav class="level hero-head">
             <div class="level-item has-text-centered">
                     <p class="title is-5">
-                        <strong>EAT - DA - BURGER</strong>
+                        <strong id="burgerNames">EAT - DA - BURGER</strong>
                     </p>
                 </div>
         </nav>
@@ -17,16 +17,14 @@
         
             </div>
             <div class="level-item hero-body">
-                <div class="field has-addons">
+                <form class="field has-addons submitBtn" id="newBurgerForm">
                     <p class="control">
-                        <input class="input" type="text" placeholder="Name a Burger">
+                        <input class="input" id="burgerName" type="text" name="burger_name" placeholder="Name a Burger">
                     </p>
                     <p class="control">
-                        <button class="button">
-                            SUBMIT
-                        </button>
+                        <button class="button" type="submit" value="SUBMIT">SUBMIT</button>
                     </p>
-                </div>
+                </form>
             </div>
     </div>
     
@@ -34,8 +32,23 @@
         {{!-- LEFT SIDE --}}
         <div class="level-left">
             <div class="level-item">
-                <p class="title is-5">
+                <p class="title is-5" id="burgerNames">
                     <strong>NAME - DAT - BURGER</strong>
+                </p>
+                <p>
+                    <ul>
+                    
+                        {{#each burgers}}
+                            {{#unless this.devoured}}
+                                <h1> {{ this.burger_name }}</h1>
+                                {{!-- {{> /burger-block devoured=false}} --}}
+                                <div class="level-item hero-body">
+                                    <button class="button is-danger is-rounded eatDaBurgerBtn" id={{this.id}}>EAT</button>
+                                </div>
+
+                            {{/unless}}
+                        {{/each}}
+                    </ul>
                 </p>
             </div>
         </div>
@@ -43,28 +56,41 @@
         {{!-- RIGHT SIDE --}}
         <div class="level-right">
             <div class="level-item">
-                <p class="title is-5">
+                <p class="title is-5" id="burgerDevoured">
                     <strong>DEVOUR - DAT - BURGER</strong>
+                </p>
+                <p>
+                    <ul>
+                        {{#each burgers}}
+                        {{#if this.devoured}}
+                            <h1>{{this.burger_name}}</h1>
+                            {{!-- {{> /burger-block devoured=true}} --}}
+                        {{/if}}
+                        {{/each}}
+                    </ul>
                 </p>
             </div>
         </div>
 
     </div>
 
-    {{!-- FOOTER --}}
-    {{!-- <div class="hero-foot">
-    <nav class="tabs">
-      <div class="container">
-        <ul>
-          <li class="is-active"><a>Copyright VS 2020</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div> --}}
+
 
 </section>
 
-<footer></footer>
+<footer> 
+    {{!-- FOOTER --}}
+    <div class="hero-foot">
+    <nav class="tabs">
+      <div class="container">
+        <ul>
+          <li class=""><a>Copyright VS 2020</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+</footer>
 
     {{!-- CREATE A BUTTON THAT WILL SUBMIT THE USER INPUT INTO THE DB --}}
     
