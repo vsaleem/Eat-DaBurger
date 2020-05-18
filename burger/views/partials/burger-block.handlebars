@@ -1,0 +1,19 @@
+<li>
+	{{#unless devoured}}
+	{{burger_name}}
+	<button class= "button is-danger" id="changedevoured" data-id="{{id}}"
+		data-devoured="{{devoured}}">
+		EAT!
+	</button>
+	{{/unless}}
+
+	{{#if devoured}}
+    <button class="button is-success is-outlined" id="changedevoured" data-id="{{id}}"
+        data-devoured="{{devoured}}">
+		<span>
+			Devoured
+		</span>
+	</button>
+    {{burger_name}}
+    {{/if}}
+</li>
