@@ -1,5 +1,7 @@
 
 # Eat-Da-Burger
+**ENTER DEPLOYED APP HERE**
+
 
 ## DESCRIPTION
 
@@ -20,11 +22,30 @@ This application demonstrates a full stack application using Handlebars, MySQL, 
 
 ## Installation
 
-STEP 1:
+**STEP 1: Clone Repo **
+```
+git clone 
+```
+**STEP 2: Find Repo in your directory **
+```
+cd Eat-DaBurger
+```
+**STEP 3: Install neccessary NPM packages **
+```
+npm install express express-handlebars mysql
+```
+**STEP 4: Run application by running node in terminal **
+```
+node server.js
+```
 
 ## Usage
 
-Download npm packages. Type node server.js to run the program.
+**View webpage on browser **
+```
+localhost:8080/
+```
+Make sure to install npm packages. Type node server.js to run the program.
 
 ## License
 
@@ -41,7 +62,9 @@ None
 
 ## Questions
 
-For future development I plan to add a delete function to remove the devoured burgers from the page. Also, update UI to be more appealing."
+Q: What would you change about this project?
+
+A: For future development I plan to add a delete function to remove the devoured burgers from the page. Also, I will update the UI to be more appealing.
 
 
   ### FOLLOW ME ON GITHUB
