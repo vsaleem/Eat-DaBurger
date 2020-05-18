@@ -1,0 +1,22 @@
+/* PARTS YOU WANT TO CONTROL */
+
+#burgerNames {
+    color: green,
+};
+
+#textBox {
+    color: white,
+};
+
+.submitBtn {
+    color: yellow,
+};
+
+#burgerDevoured {
+    color: red,
+};
+
+/* This btn pops up then a burger is named */
+#eatDaBurgerBtn {
+    color: rebeccapurple;
+}
