@@ -5,9 +5,9 @@ const path = require('path');
 const PORT = process.env.PORT || 8080;
 const app = express();
 
-// REQUIRE STATIC ASSETS FROM PUBLIC FOLDER
-app.use(express.static(path.join(__dirname, "public")));
 
+// REQUIRE STATIC ASSETS FROM PUBLIC FOLDER
+app.use(express.static("public"));
 
 // DATA THAT CAN BE USED IN REQ.BODY
 app.use(express.urlencoded({ extended: true }));
