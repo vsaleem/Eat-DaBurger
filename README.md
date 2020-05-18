@@ -22,26 +22,26 @@ This application demonstrates a full stack application using Handlebars, MySQL, 
 
 ## Installation
 
-**STEP 1: Clone Repo **
+**STEP 1: Clone Repo**
 ```
 git clone 
 ```
-**STEP 2: Find Repo in your directory **
+**STEP 2: Find Repo in your directory**
 ```
 cd Eat-DaBurger
 ```
-**STEP 3: Install neccessary NPM packages **
+**STEP 3: Install neccessary NPM packages**
 ```
 npm install express express-handlebars mysql
 ```
-**STEP 4: Run application by running node in terminal **
+**STEP 4: Run application by running node in terminal**
 ```
 node server.js
 ```
 
 ## Usage
 
-**View webpage on browser **
+**View webpage on browser**
 ```
 localhost:8080/
 ```
