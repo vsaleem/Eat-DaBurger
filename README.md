@@ -22,9 +22,9 @@ This application demonstrates a full stack application using Handlebars, MySQL, 
 
 ## Installation
 
-**STEP 1: Clone Repo**
+**STEP 1: Clone Repo in terminal**
 ```
-git clone 
+git clone https://github.com/vsaleem/Eat-DaBurger.git 
 ```
 **STEP 2: Find Repo in your directory**
 ```
