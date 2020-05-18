@@ -1,34 +1,35 @@
-const express = require('express');
-const burger = require('../models/burger');
+var express = require('express');
+var burger = require('../models/burger');
 
 // CREATE ROUTER, THEN EXPORT ROUTER
 
-let router = express.Router();
+var router = express.Router();
 
 
 // TYPE EXPLANATIONS
 
 // ROUTES TO HOME PAGE, SELECTS METHOD INSTRUCTIONS FROM BURGER, IMPORTS BURGER DATA AND RENDERS ONTO HANDLEBARS PAGE.
 router.get("/", function(req, res){
+
     burger.selectAll(function(data){
         let burgerData = {
             burgers: data
         };
         console.log(burgerData);
-        res.render("index.handlebars", burgerData);
+        res.render("index", burgerData);
     });
 });
 
 
 
 
-router.post("/api/burgers", function(req, res){
-    burger.insertOne([
-        "burger_name", "devoured"
-    ], [
-        req.body.burger_name, req.body.devoured
-    ], function(result){
-        res.json({ id: result.insertId });
+router.post("/create", function(req, res){
+    burger.insertOne(
+        ["burger_name", "devoured"], 
+        [req.body.burger_name, req.body.devoured], 
+    
+        function(result){
+            res.json({ id: result.insertId });
     });
 });
 
