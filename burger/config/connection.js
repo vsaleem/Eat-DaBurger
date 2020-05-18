@@ -1,17 +1,17 @@
 const mysql = require('mysql');
 
-const connection = mysql.createConnection({
+var connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
-    user: 'vsaleem',
+    user: '',
     password: "",
-    database: ''
+    database: 'burgers_db'
 
 });
 
 connection.connect(function(err){
     if (err) throw err;
-    console.log("You are connected to mysql on port " + connection.port);
+    console.log("You are connected to MySql on port " + connection.port);
 })
 
 
