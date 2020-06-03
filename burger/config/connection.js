@@ -20,5 +20,4 @@ connection.connect(function(err){
     console.log("You are connected to MySql on port " + connection.port);
 })
 
-
 module.exports = connection;
