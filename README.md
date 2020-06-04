@@ -1,6 +1,6 @@
 
 # Eat-Da-Burger
-**ENTER DEPLOYED APP HERE**
+*https://eat-dat--burger-app.herokuapp.com/**
 
 
 ## DESCRIPTION
