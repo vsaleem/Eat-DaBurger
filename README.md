@@ -1,6 +1,6 @@
 
 # Eat-Da-Burger
-*https://eat-dat--burger-app.herokuapp.com/**
+**https://eat-dat--burger-app.herokuapp.com/**
 
 
 ## DESCRIPTION
