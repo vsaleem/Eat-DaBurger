@@ -41,7 +41,7 @@ node server.js
 
 ## Usage
 
-**View webpage on browser**
+**View webpage in browser**
 ```
 localhost:8080/
 ```
